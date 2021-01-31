@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="top">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/account"
+            app:tint="#D8D8D8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST 님"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="11dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안녕하세요."
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_marginTop="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/imageView">
+
+            <LinearLayout
+
+                android:id="@+id/layoutStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imageViewCamera"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/outline_camera_alt_black_48"
+                    app:tint="#B8B8B8"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/btnStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:text="시작하기"
+                    android:textColor="#B8B8B8"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="top" />
+
+                <ImageView
+                    android:id="@+id/imageViewAdd"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="230dp"
+                    android:src="@drawable/baseline_add_black_48"
+                    app:tint="#B8B8B8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="카메라로 사진찍기"
+                    android:textSize="15sp"
+                    android:textColor="@drawable/text_click"
+                    android:paddingLeft="70dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/textAlbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="앨범에서 가져오기"
+                    android:textSize="15sp"
+                    android:textColor="@drawable/text_click"
+                    android:paddingLeft="70dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFECECEC"
+                />
+
+            <LinearLayout
+
+                android:id="@+id/layoutBoard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBoard"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/outline_article_black_48"
+                    app:tint="#B8B8B8"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/btnBoard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:text="게시판"
+                    android:textColor="#B8B8B8"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="top" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFECECEC"
+                 />
+
+            <LinearLayout
+
+                android:id="@+id/layoutLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imageViewLogout"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/logout"
+                    app:tint="#B8B8B8"
+                    android:layout_marginLeft="13dp"
+                    />
+
+                <TextView
+                    android:id="@+id/btnLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:text="로그아웃"
+                    android:textColor="#B8B8B8"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="top" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

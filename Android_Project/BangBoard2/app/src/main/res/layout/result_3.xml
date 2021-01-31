@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/youtube"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youtube"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/youtube"
+                android:text="인식 결과 운동기구"
+                android:textColor="@drawable/resulttext_click"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 유튜브 영상 보기"
+                android:textColor="#B8B8B8"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/resultTextView"
+                android:layout_alignBottom="@+id/resultTextView" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayer_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:autoPlay="false"
+                android:layout_below="@+id/resultTextView"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/re1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추천 운동기구1"
+                android:textColor="@drawable/re1text_click"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/youtubePlayer_result"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 유튜브 영상 보기"
+                android:textColor="#B8B8B8"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/re1TextView"
+                android:layout_alignBottom="@+id/re1TextView" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayer_re1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:autoPlay="false"
+                android:layout_below="@+id/re1TextView"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/re2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추천 운동기구2"
+                android:textColor="@drawable/re2text_click"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/youtubePlayer_re1"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 유튜브 영상 보기"
+                android:textColor="#B8B8B8"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/re2TextView"
+                android:layout_alignBottom="@+id/re2TextView" />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayer_re2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:autoPlay="false"
+                android:layout_below="@+id/re2TextView"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

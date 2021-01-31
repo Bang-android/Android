@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="회원가입"
+            android:textColor="#FFD18C"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_edittext"
+            android:hint="ID를 입력하세요"
+            android:padding="10dp"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/textidCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID 중복 확인"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/register_edittext"
+            android:hint="비밀번호를 입력하세요."
+            android:padding="10dp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/textpasswordCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 적합성 확인"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/register_edittext"
+            android:hint="비밀번호를 다시 한번 입력하세요."
+            android:padding="10dp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/textpasswordCheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 적합성 확인2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_register"
+            android:text="회원가입"
+            android:layout_marginTop="15dp"
+            android:textColor="#BA9763" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

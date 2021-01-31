@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이 운동기구는 "
+                    android:textColor="#B8B8B8"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/result1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="운동기구이름"
+                    android:textColor="@drawable/resulttext_click"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 입니다."
+                    android:textColor="#B8B8B8"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textTouch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="104dp"
+                android:layout_marginRight="104dp"
+                android:text="운동기구이름을 터치해보세요!"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/result1AddLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/nameLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/result1layoutbackground"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="운동기구 사진"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#359C3B"/>
+
+                <ImageView
+                    android:id="@+id/result1ImageView"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="POINT"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#359C3B"/>
+
+                <TextView
+                    android:id="@+id/result1Point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다"
+                    android:textColor="#359C3B"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POSITION"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#359C3B"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/result1Position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="테스트"
+                    android:textColor="#359C3B" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="METHOD"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#359C3B"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/result1Method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="테스트"
+                    android:textColor="#359C3B" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
